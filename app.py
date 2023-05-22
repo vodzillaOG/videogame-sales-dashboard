@@ -1,3 +1,5 @@
+-m pip install dash-bootstrap-components
+
 
 import numpy as np 
 import pandas as pd 
