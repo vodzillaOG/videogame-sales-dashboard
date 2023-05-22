@@ -10,7 +10,7 @@ from plotly.subplots import make_subplots
 
 
 # Data preprocessing
-url = "https://raw.githubusercontent.com/vodzillaOG/VG-sales/main/vgsales.csv"
+url = "https://raw.githubusercontent.com/vodzillaOG/videogame-sales-dashboard/main/data/vgsales.csv"
 df = pd.read_csv(url).drop_duplicates()
 
 # Start the app
