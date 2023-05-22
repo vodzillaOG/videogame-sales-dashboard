@@ -1,17 +1,12 @@
 
-
-
-import numpy as np 
-import pandas as pd 
-import seaborn as sns
-import plotly.express as px
-import plotly.graph_objects as go
 import dash
-from dash import dcc
-from dash import html
+from dash import dcc, html
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
-from dash import Dash
+import pandas as pd
+import plotly.graph_objects as go
+import plotly.express as px
+from plotly.subplots import make_subplots
 
 
 # Data preprocessing
@@ -19,7 +14,7 @@ url = "https://raw.githubusercontent.com/vodzillaOG/VG-sales/main/vgsales.csv"
 df = pd.read_csv(url).drop_duplicates()
 
 # Start the app
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(__name__)
 server = app.server
 
 # Building some components
