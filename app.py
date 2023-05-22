@@ -14,7 +14,7 @@ url = "https://raw.githubusercontent.com/vodzillaOG/VG-sales/main/vgsales.csv"
 df = pd.read_csv(url).drop_duplicates()
 
 # Start the app
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
 
 # Building some components
