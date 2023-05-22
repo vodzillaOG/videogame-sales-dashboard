@@ -12,7 +12,7 @@ from dash import Dash
 
 
 # Data preprocessing
-df = pd.read_csv (r'vgsales.csv')
+df = pd.read_csv (data/vgsales.csv)
 
 # Start the app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
