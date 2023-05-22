@@ -196,7 +196,7 @@ fig3.update_layout(
         gridcolor='black'
     ),
     font=dict(color='#D9ED92'),
-    title=dict(text='MOST POPULAR PLATFORMS IN EVERY REGION', font=dict(color='#D9ED92', size=30)),
+    title=dict(text='MOST POPULAR PLATFORMS', font=dict(color='#D9ED92', size=30)),
     legend=dict(
         font=dict(
             size=16
