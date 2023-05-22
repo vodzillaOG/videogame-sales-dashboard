@@ -180,6 +180,7 @@ fig3.add_trace(go.Bar(
 fig3.update_layout(
     barmode='relative',
     title_text='MOST POPULAR PLATFORMS',
+    title_x=0.5,
     xaxis_title='Platform',
     yaxis_title='Sales (mm$)',
     plot_bgcolor='black',
